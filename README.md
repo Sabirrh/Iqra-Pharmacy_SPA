@@ -1,9 +1,7 @@
 # 🌿 IQRA Pharmacy
-
-{align="center"}
+<div align="center">
 # 💚 IQRA Pharmacy
-
-### *Your Health, Our Priority*
+</div>
 
 A premium, responsive pharmacy website built with **React**, **Vite**,
 **Tailwind CSS**, and **Framer Motion**. The project focuses on modern
@@ -130,6 +128,6 @@ npm run dev
 If you found this project useful, please consider giving it a ⭐ on
 GitHub.
 
-{align="center"}
+<div align="center">
 Made with ❤️ using React & Tailwind CSS
-:::
+</div>
