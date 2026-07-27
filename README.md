@@ -1,6 +1,6 @@
 # 🌿 IQRA Pharmacy
 
-::: {align="center"}
+{align="center"}
 # 💚 IQRA Pharmacy
 
 ### *Your Health, Our Priority*
@@ -130,6 +130,6 @@ npm run dev
 If you found this project useful, please consider giving it a ⭐ on
 GitHub.
 
-::: {align="center"}
+{align="center"}
 Made with ❤️ using React & Tailwind CSS
 :::
