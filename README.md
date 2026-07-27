@@ -1,7 +1,7 @@
 # 🌿 IQRA Pharmacy
 
 # 💚 IQRA Pharmacy
-#
+:::
 
 A premium, responsive pharmacy website built with **React**, **Vite**,
 **Tailwind CSS**, and **Framer Motion**. The project focuses on modern
