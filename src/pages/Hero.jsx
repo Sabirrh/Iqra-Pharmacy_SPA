@@ -2,6 +2,7 @@ import { assests } from "../assets/assests";
 import { motion } from "framer-motion";
 import { FiUser, FiHeart, FiArrowRight } from "react-icons/fi";
 import { GoShieldCheck } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 
 export default function HeroSection() {
@@ -64,7 +65,7 @@ export default function HeroSection() {
                     </div>
 
                     {/* Call to Action Button */}
-                    <motion.button
+                    {/* <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="flex items-center gap-4 bg-green-800 text-white px-6 py-3 rounded-full w-full sm:w-fit justify-center hover:bg-green-900 transition-colors shadow-lg"
@@ -73,7 +74,26 @@ export default function HeroSection() {
                         <div className="bg-white text-green-800 p-1.5 rounded-full">
                             <FiArrowRight className="text-sm" />
                         </div>
+                    </motion.button> */}
+                    {/* Call to Action Button */}
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center gap-4 bg-green-800 text-white px-6 py-3 rounded-full w-full sm:w-fit justify-center hover:bg-green-900 transition-colors shadow-lg"
+                    >
+                        <Link
+                            href="https://google.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium cursor-pointer"
+                        >
+                            Visit Us Today
+                        </Link>
+                        <div className="bg-white text-green-800 p-1.5 rounded-full">
+                            <FiArrowRight className="text-sm" />
+                        </div>
                     </motion.button>
+
                 </motion.div>
 
                 {/* Right Side: Hero Image with Curved Edge */}
@@ -91,6 +111,7 @@ export default function HeroSection() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-900/50 to-emerald-800/40"></div>
                     </div>
+                    <div></div>
                 </motion.div>
             </section>
         </>

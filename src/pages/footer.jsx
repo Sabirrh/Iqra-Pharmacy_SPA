@@ -36,7 +36,7 @@ export default function VisitUs() {
 
                         {/* Phone & Hours */}
                         <div className="text-green-100 text-sm flex flex-col gap-2">
-                            <p className="tracking-widest mb-2">+977 98 091 95607</p>
+                            <p className="tracking-widest mb-2">+977 98 222 55550</p>
                             <div className="flex gap-4">
                                 <span className="w-20">Sun - thu :</span>
                                 <span>8:00 AM - 11:00 PM</span>

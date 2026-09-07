@@ -6,12 +6,13 @@ import {
     HiPhone,
     HiInformationCircle,
     HiHeart,
+    HiOutlineMenuAlt3,
 } from "react-icons/hi";
 import { HiOutlineBeaker } from "react-icons/hi2";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function MobileNavigation({
-     isMenuOpen,
+    isMenuOpen,
     setIsMenuOpen,
 }) {
 

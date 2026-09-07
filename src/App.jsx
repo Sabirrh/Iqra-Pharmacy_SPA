@@ -7,7 +7,6 @@ import About from "./pages/About";
 import HealthTips from "./pages/Health";
 import Services from "./pages/Service";
 import Contact from "./pages/Contact";
-
 import Loaders from "./components/Loaders/Loaders";
 
 const router = createBrowserRouter([

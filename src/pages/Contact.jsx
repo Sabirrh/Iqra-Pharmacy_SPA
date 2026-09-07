@@ -26,7 +26,7 @@ export default function Contact() {
         const text = `Hello Iqra Pharmacy, my name is ${formData.name}.\n\nMessage: ${formData.message}\n\nMy Email: ${formData.email}\nMy Phone: ${formData.number}`;
         
         // Using the number from your navbar
-        const whatsappNumber = "9779809135007"; 
+        const whatsappNumber = "9779822255550"; 
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
         
         window.open(whatsappUrl, '_blank');
@@ -77,7 +77,7 @@ export default function Contact() {
                                 </div>
                                 <div className="text-sm">
                                     <p className="font-semibold text-white">Call Us</p>
-                                    <p className="text-emerald-200">+977 98 0913 5007</p>
+                                    <p className="text-emerald-200">+977 98 222 55550</p>
                                 </div>
                             </div>
 

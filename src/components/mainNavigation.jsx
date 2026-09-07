@@ -63,8 +63,8 @@ export default function MainNavigation() {
                         <div>
                             <Link to="/">
                                 <h1 className="text-3xl font-bold tracking-wider text-emerald-800 leading-none cursor-pointer">IQRA</h1>
-                            <p className="text-m font-semibold text-gray-500 tracking-widest mt-1 cursor-pointer">PHARMACY</p>
-                            <p className="text-[10px] text-emerald-600 italic cursor-pointer">Your Health, Our Priority</p>
+                                <p className="text-m font-semibold text-gray-500 tracking-widest mt-1 cursor-pointer">PHARMACY</p>
+                                <p className="text-[10px] text-emerald-600 italic cursor-pointer">Your Health, Our Priority</p>
                             </Link>
                         </div>
                     </div>
@@ -112,8 +112,7 @@ export default function MainNavigation() {
                         </ul>
                     </nav>
                     {/* Right Section */}
-                    <div className="flex items-center gap-4">
-                        {/* Desktop Call Button */}
+                    {/* <div className="flex items-center gap-4">
                         <div className={`
                               hidden lg:block
                               bg-emerald-900
@@ -142,7 +141,7 @@ export default function MainNavigation() {
                                     </p>
 
                                     <p className="text-sm text-emerald-200">
-                                        Call Us
+                                        Call Us - What's App
                                     </p>
                                 </div>
 
@@ -150,14 +149,74 @@ export default function MainNavigation() {
                         </div>
 
                         {/* Mobile Menu Button */}
-                        <button
-                            onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="lg:hidden text-emerald-800 text-4xl"
-                        >
-                            {isMenuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
-                        </button>
+                    <button
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        className="lg:hidden text-emerald-800 text-4xl right-0.5"
+                    >
+                        {isMenuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
+                    </button>
+
+                    {/* </div> */}
+
+                    <div className="flex items-center gap-4">
+                        {/* Desktop Call/WhatsApp Dropdown Container */}
+                        <div className={`
+                                hidden lg:block
+                                relative group
+                                bg-emerald-900
+                                rounded-2xl
+                                px-4
+                                py-3
+                                transition-all
+                                duration-500
+                                cursor-pointer
+                                hover:bg-emerald-800
+                                hover:scale-105
+                                ${isScrolled ? "scale-95" : "scale-100"}
+                            `}>
+                            {/* Main Trigger Display */}
+                            <div className="text-white flex items-center gap-2">
+                                <img
+                                    src={assests.smartphone_icon}
+                                    alt="Phone Icon"
+                                    className="w-6 h-6"
+                                />
+                                <div className="text-left">
+                                    <p className="text-xs font-bold whitespace-nowrap">
+                                        +977 9822255550
+                                    </p>
+                                    <p className="text-sm text-emerald-200 flex items-center gap-1">
+                                        Contact Us
+                                        <span className="text-[10px] opacity-70">▼</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Hover Menu Options */}
+                            <div className="absolute top-[102%] left-0 w-full bg-emerald-900 rounded-xl shadow-xl border border-emerald-800 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50">
+                                {/* Native Call Option */}
+                                <a
+                                    href="tel:+9779809195607"
+                                    className="flex items-center gap-3 px-4 py-3 text-white text-sm hover:bg-emerald-800 transition-colors"
+                                >
+                                    📞 <span className="font-medium">Direct Call</span>
+                                </a>
+
+                                {/* WhatsApp Option */}
+                                <a
+                                    href="https://wa.me/9779822255550"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-3 px-4 py-3 text-white text-sm border-t border-emerald-800/50 hover:bg-emerald-800 transition-colors"
+                                >
+                                    💬 <span className="font-medium">WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+
 
                     </div>
+
 
                 </div>
             </header>
